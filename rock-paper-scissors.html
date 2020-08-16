@@ -1,7 +1,21 @@
 <script>
 function computerPlay() {
 let choices = ["Rock","Paper","Scissor"];
-let pick = choices[Math.floor(Math.random * choices.length)];
+let pick = choices[Math.floor(Math.random() * choices.length)];
 return pick;
+}
+
+let playerSelection = prompt("Choose rock, paper or scissor:");
+
+function playRound(playerSelection, computerSelection) {
+    if (playerSelection == "rock") {
+        if (computerSelection == "scissor") {
+        return "Well done! Your rock smashed those scissors!";
+    } else if (computerSelection == "paper") {
+        return "Oh no! You have been foiled by simple paper!";
+    } else (computerSelection == "rock") {
+        return "Rock vs Rock! Equal power means no winners here.";
+    }
+}
 }
 </script>
