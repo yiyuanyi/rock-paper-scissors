@@ -1,6 +1,10 @@
 # rock-paper-scissors
 make rock, paper, scissors using JS for TOP
 
+Requires using loops, functions to convert font case, randomly selecting item from array, calling back to global functions.
+
+Found this difficult but learnt a lot about correct order of code and also nesting.
+
 1)Relatively easy to make computerPlay(), however I am finding it very hard to make the playRound() function work.
 
 2)May use switch statements for cases as this may be easier format than the if else statements.
@@ -18,3 +22,5 @@ make rock, paper, scissors using JS for TOP
 8)Adding if/else statements to the loop function to play 5 rounds and add up scores and return the winner of the 5 rounds.
 
 9)Fixed curly brackets in function section. Moved the player score comparison inside the game() function. Game is working properly inside the console.
+
+10)created rps html and added js code and instructions. is all running correctly. will upload to github and TOP solutions.
