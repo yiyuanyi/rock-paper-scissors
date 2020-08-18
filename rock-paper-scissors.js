@@ -36,8 +36,8 @@ computerSelection = computerPlay().toLowerCase();
     };
 }
 
-let playerWinCount = 0;
-let computerWinCount = 0;
+let playerScore = 0;
+let computerScore = 0;
 let ties = 0;
 
 function game() {
