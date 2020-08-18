@@ -5,17 +5,18 @@ let computerChoice = choices[Math.floor(Math.random() * choices.length)];
 return computerChoice;
 }
 
-const playerSelection = prompt("Choose rock, paper or scissors:");
-
-let computerSelection = computerPlay();
-
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection == "rock" && computerSelection == "scissors") {
-        return "Well done! Your rock smashed those scissors!";
+    const computerSelection = computerPlay();
+
+    let playerSelection = prompt("Choose rock, paper or scissors:");
+
+    if (playerSelection == computerSelection) {
+        return "Rock vs Rock! Equal power means no winners here.";
     } else if (playerSelection == "rock" && computerSelection == "paper") {
         return "Oh no! You have been foiled by simple paper!";
+    } else if (playerSelection == "rock" && computerSelection == "scissors") {
+        return "You crushed thoe scissors! Well done!";
     } else {
-        return "Rock vs Rock! Equal power means no winners here.";
+        return "Ooops. Something went wrong."
     }
-}
 </script>
