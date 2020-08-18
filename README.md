@@ -14,3 +14,5 @@ make rock, paper, scissors using JS for TOP
 6)Adding in loop to play 5 rounds of the game. Cannot get it to work right now. Think i need the playerSelection prompt and computerSelection to work properly. 
 
 7)Have got playRound() to work using the player prompt and computerPlay(). Works fine now!!! nice
+
+8)Adding if/else statements to the loop function to play 5 rounds and add up scores and return the winner of the 5 rounds.

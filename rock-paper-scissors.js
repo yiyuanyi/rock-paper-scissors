@@ -38,10 +38,28 @@ computerSelection = computerPlay().toLowerCase();
 
 let playerWinCount = 0;
 let computerWinCount = 0;
+let ties = 0;
 
 function game() {
-    console.log("There are 5 rounds.")
+    console.log("There are 5 rounds.");
 for (let rounds=0; rounds<5; rounds++) {
     playRound();
+} if (playRound().includes('Win!')) {
+    playerScore++;
+    console.log("Player win! +1");
+} else if (playRound().includes('Lose.')) {
+    computerScore++;
+    console.log("Computer win. +1");
+} else {
+    ties++;
+    console.log("Tie")
 }
+}
+
+if (playerScore > computerScore) {
+    return "Well done! You beat the computer!";
+} else if (playerScore < computerScore) {
+    return "Too bad. The computer won this time :(";
+} else {
+    return "You both did equally good!";
 }
