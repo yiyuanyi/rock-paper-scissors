@@ -5,4 +5,4 @@ make rock, paper, scissors using JS for TOP
 
 2)May use switch statements for cases as this may be easier format than the if else statements.
 
-3)Keep if else statements. Writing all statements so that is out of the way.
+3)Keep if else statements. Writing all statements so that is out of the way. Looking at other peoples TOp to try and get what to do next.
