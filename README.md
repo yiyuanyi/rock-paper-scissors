@@ -11,4 +11,6 @@ make rock, paper, scissors using JS for TOP
 
 5)Made it case insensitive by adding toLowerCase() inside the playRound() function.
 
-6)Adding in loop to play 5 rounds of the game. 
+6)Adding in loop to play 5 rounds of the game. Cannot get it to work right now. Think i need the playerSelection prompt and computerSelection to work properly. 
+
+7)Have got playRound() to work using the player prompt and computerPlay(). Works fine now!!! nice

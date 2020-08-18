@@ -5,14 +5,13 @@ let computerChoice = choices[Math.floor(Math.random() * choices.length)];
 return computerChoice;
 }
 
-console.log("Computer has chosen " + computerPlay())
-
 let playerSelection = prompt("Choose rock, paper or scissors:");
 
-function playRound(playerSelection, computerSelection) {
-//convrts player selection and computer selection to lower case to be case insensitive
+function playRound() {
+//converts player selection and computer selection to lower case to be case insensitive
 playerSelection = playerSelection.toLowerCase();
-computerSelection = computerSelection.toLowerCase();
+
+computerSelection = computerPlay().toLowerCase();
 
     if (playerSelection == "rock" && computerSelection == "rock") {
         return "Rock vs Rock! Tie.";
@@ -37,8 +36,12 @@ computerSelection = computerSelection.toLowerCase();
     };
 }
 
-function game(playerSelection, computerSelection) {
+let playerWinCount = 0;
+let computerWinCount = 0;
+
+function game() {
+    console.log("There are 5 rounds.")
 for (let rounds=0; rounds<5; rounds++) {
-    playRound(playerSelectioon,computerSelection);
+    playRound();
 }
 }
