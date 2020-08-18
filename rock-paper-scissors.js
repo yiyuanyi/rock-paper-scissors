@@ -57,9 +57,9 @@ for (let rounds=0; rounds<5; rounds++) {
 }
 
 if (playerScore > computerScore) {
-    return "Well done! You beat the computer!";
+    console.log("Well done! You beat the computer!");
 } else if (playerScore < computerScore) {
-    return "Too bad. The computer won this time :(";
+    console.log("Too bad. The computer won this time :(");
 } else {
-    return "You both did equally good!";
+    console.log("You both did equally good!");
 }
