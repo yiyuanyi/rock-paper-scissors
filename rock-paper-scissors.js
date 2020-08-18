@@ -44,7 +44,7 @@ function game() {
     console.log("There are 5 rounds.");
 for (let rounds=0; rounds<5; rounds++) {
     playRound();
-} if (playRound().includes('Win!')) {
+if (playRound().includes('Win!')) {
     playerScore++;
     console.log("Player win! +1");
 } else if (playRound().includes('Lose.')) {
@@ -55,7 +55,6 @@ for (let rounds=0; rounds<5; rounds++) {
     console.log("Tie")
 }
 }
-
 if (playerScore > computerScore) {
     console.log("Well done! You beat the computer!");
 } else if (playerScore < computerScore) {
@@ -63,3 +62,5 @@ if (playerScore > computerScore) {
 } else {
     console.log("You both did equally good!");
 }
+}
+

@@ -16,3 +16,5 @@ make rock, paper, scissors using JS for TOP
 7)Have got playRound() to work using the player prompt and computerPlay(). Works fine now!!! nice
 
 8)Adding if/else statements to the loop function to play 5 rounds and add up scores and return the winner of the 5 rounds.
+
+9)Fixed curly brackets in function section. Moved the player score comparison inside the game() function. Game is working properly inside the console.
