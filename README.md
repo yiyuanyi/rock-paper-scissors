@@ -6,3 +6,7 @@ make rock, paper, scissors using JS for TOP
 2)May use switch statements for cases as this may be easier format than the if else statements.
 
 3)Keep if else statements. Writing all statements so that is out of the way. Looking at other peoples TOp to try and get what to do next.
+
+4)Have got it to work with manual input of playRound(rps1, rps2). would like it to run automatically with prompt and computerSelection using computerPlay().
+
+5)Made it case insensitive by adding toLowerCase() inside the playRound() function

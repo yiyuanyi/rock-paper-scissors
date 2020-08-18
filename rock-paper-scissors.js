@@ -5,8 +5,12 @@ let computerChoice = choices[Math.floor(Math.random() * choices.length)];
 return computerChoice;
 }
 
+let playerSelection = prompt("Choose rock, paper or scissors:");
+
 function playRound(playerSelection, computerSelection) {
-    let playerSelection = prompt("Choose rock, paper or scissors:");
+
+playerSelection = playerSelection.toLowerCase();
+computerSelection = computerSelection.toLowerCase();
 
     if (playerSelection == "rock" && computerSelection == "rock") {
         return "Rock vs Rock! Tie.";
