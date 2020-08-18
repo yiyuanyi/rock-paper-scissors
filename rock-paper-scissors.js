@@ -1,14 +1,15 @@
-<script>
+//function that chooses rock, apper, or scissors randomly. case insensitive.
 function computerPlay() {
 let choices = ["Rock","Paper","Scissors"];
 let computerChoice = choices[Math.floor(Math.random() * choices.length)];
-return computerChoice;
+return computerChoice.toUpperCase;
 }
 
 function playRound(playerSelection, computerSelection) {
-    const computerSelection = computerPlay();
+    const computerSelection = computerPlay.toUpperCase;
 
-    let playerSelection = prompt("Choose rock, paper or scissors:");
+    let playerChoice = prompt("Choose rock, paper or scissors:");
+    let playerSelection = playerChoice.toUpperCase;
 
     if (playerSelection == computerSelection) {
         return "Rock vs Rock! Equal power means no winners here.";
@@ -18,5 +19,5 @@ function playRound(playerSelection, computerSelection) {
         return "You crushed thoe scissors! Well done!";
     } else {
         return "Ooops. Something went wrong."
-    }
-</script>
+    };
+}
