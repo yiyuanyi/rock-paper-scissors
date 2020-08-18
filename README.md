@@ -9,4 +9,6 @@ make rock, paper, scissors using JS for TOP
 
 4)Have got it to work with manual input of playRound(rps1, rps2). would like it to run automatically with prompt and computerSelection using computerPlay().
 
-5)Made it case insensitive by adding toLowerCase() inside the playRound() function
+5)Made it case insensitive by adding toLowerCase() inside the playRound() function.
+
+6)Adding in loop to play 5 rounds of the game. 

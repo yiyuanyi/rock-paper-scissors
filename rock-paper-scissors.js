@@ -1,14 +1,16 @@
-//function that chooses rock, apper, or scissors randomly. case insensitive.
+//function that chooses rock, apper, or scissors randomly.
 function computerPlay() {
 let choices = ["Rock","Paper","Scissors"];
 let computerChoice = choices[Math.floor(Math.random() * choices.length)];
 return computerChoice;
 }
 
+console.log("Computer has chosen " + computerPlay())
+
 let playerSelection = prompt("Choose rock, paper or scissors:");
 
 function playRound(playerSelection, computerSelection) {
-
+//convrts player selection and computer selection to lower case to be case insensitive
 playerSelection = playerSelection.toLowerCase();
 computerSelection = computerSelection.toLowerCase();
 
@@ -33,4 +35,10 @@ computerSelection = computerSelection.toLowerCase();
     } else {
         return "Ooops. Something went wrong."
     };
+}
+
+function game(playerSelection, computerSelection) {
+for (let rounds=0; rounds<5; rounds++) {
+    playRound(playerSelectioon,computerSelection);
+}
 }
