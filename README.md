@@ -24,3 +24,5 @@ Found this difficult but learnt a lot about correct order of code and also nesti
 9)Fixed curly brackets in function section. Moved the player score comparison inside the game() function. Game is working properly inside the console.
 
 10)created rps html and added js code and instructions. is all running correctly. will upload to github and TOP solutions.
+
+11) Move playerSelecion inside playRound() so player can choose new choice each time they play. Make playRound() part of result variable so only have to run playRound() once at start of each round.

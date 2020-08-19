@@ -7,16 +7,15 @@
 </body>
 
 <script>
-    //function that chooses rock, apper, or scissors randomly.
+//function that chooses rock, paper, or scissors randomly.
 function computerPlay() {
 let choices = ["Rock","Paper","Scissors"];
 let computerChoice = choices[Math.floor(Math.random() * choices.length)];
 return computerChoice;
 }
 
-let playerSelection = prompt("Choose rock, paper or scissors:");
-
 function playRound() {
+let playerSelection = prompt("Choose rock, paper or scissors:");
 //converts player selection and computer selection to lower case to be case insensitive
 playerSelection = playerSelection.toLowerCase();
 
@@ -54,11 +53,11 @@ let ties = 0;
 function game() {
     console.log("There are 5 rounds.");
 for (let rounds=0; rounds<5; rounds++) {
-    playRound();
-if (playRound().includes('Win!')) {
+    let result = playRound();
+if (result.includes('Win!')) {
     playerScore++;
     console.log("Player win! +1");
-} else if (playRound().includes('Lose.')) {
+} else if (result.includes('Lose.')) {
     computerScore++;
     console.log("Computer win. +1");
 } else {
