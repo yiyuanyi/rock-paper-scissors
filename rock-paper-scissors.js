@@ -1,4 +1,4 @@
-//function that chooses rock, apper, or scissors randomly.
+//function that chooses rock, paper, or scissors randomly.
 function computerPlay() {
 let choices = ["Rock","Paper","Scissors"];
 let computerChoice = choices[Math.floor(Math.random() * choices.length)];
