@@ -8,9 +8,9 @@
     <h1 class="title">Rock, Paper, Scissors</h1>
 
     <div class = "buttons">
-        <button class="btn">Rock</button>
-        <button class="btn">Paper</button>
-        <button class="btn">Scissors</button>
+        <button class="btn" id="rock">Rock</button>
+        <button class="btn" id="paper">Paper</button>
+        <button class="btn" id="scissors">Scissors</button>
     </div>
 </body>
 
@@ -29,10 +29,19 @@ btn.forEach((button) => {
 });
 
 function playRound() {
-//let playerSelection = ;
+let playerSelection;
+if (this.id == "rock") {
+    playerSelection = "rock";
+} else if (this.id == "paper") {
+    playerSelection = "paper";
+} else if (this.id == "scissors") {
+    playerSelection = "scissors";
+}
 
 //converts player selection and computer selection to lower case to be case insensitive
 playerSelection = playerSelection.toLowerCase();
+
+console.log(playerSelection);
 
 /*computerSelection = computerPlay().toLowerCase();
 
