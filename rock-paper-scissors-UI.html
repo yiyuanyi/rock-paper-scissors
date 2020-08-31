@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="rock-paper-scissors-UI.css">
+</head>
+    
 <body>
+    <h1 class="title">Rock, Paper, Scissors</h1>
 
+    <div class = "buttons">
+        <button class="btn">Rock</button>
+        <button class="btn">Paper</button>
+        <button class="btn">Scissors</button>
+    </div>
 </body>
 
 <script>
@@ -12,12 +22,19 @@ let computerChoice = choices[Math.floor(Math.random() * choices.length)];
 return computerChoice;
 }
 
+//selector for all buttons
+const btn = document.querySelectorAll('.btn');
+btn.forEach((button) => {
+    button.addEventListener('click', playRound)
+});
+
 function playRound() {
-let playerSelection = prompt("Choose rock, paper or scissors:");
+//let playerSelection = ;
+
 //converts player selection and computer selection to lower case to be case insensitive
 playerSelection = playerSelection.toLowerCase();
 
-computerSelection = computerPlay().toLowerCase();
+/*computerSelection = computerPlay().toLowerCase();
 
     if (playerSelection == "rock" && computerSelection == "rock") {
         return "Rock vs Rock! Tie.";
@@ -39,8 +56,8 @@ computerSelection = computerPlay().toLowerCase();
         return "Scissors vs Scissors. Tie.";
     } else {
         return "Ooops. Something went wrong."
-    };
-}
+    }; */
+} 
 
 //sets all score counters to 0
 let playerScore = 0;
